@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-22T06:54:21.036Z</updated>
+  <updated>2024-06-05T03:01:17.455Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/06/05/google%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2024/06/05/google%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</id>
+    <published>2024-06-05T02:56:58.592Z</published>
+    <updated>2024-06-05T03:01:17.455Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Use-Google-like-a-pro"><a href="#Use-Google-like-a-pro" class="headerlink" title="Use Google like a pro"></a>Use Google like a pro</h1><p>原文地址：Use Google like a pro</p><p>原文作者：Marko Denic</p><p>译者：Gopal</p><h3 id="1-使用引号强制进行精确匹配搜索"><a href="#1-使用引号强制进行精确匹配搜索" class="headerlink" title="1. 使用引号强制进行精确匹配搜索"></a><strong>1. 使用引号强制进行精确匹配搜索</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“what is javascript&quot;</span><br></pre></td></tr></table></figure><h3 id="2-And-运算符"><a href="#2-And-运算符" class="headerlink" title="2. And 运算符"></a><strong>2. And 运算符</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html AND css</span><br></pre></td></tr></table></figure><h3 id="3-使用-OR-操作符获取搜索词中某一个的结果"><a href="#3-使用-OR-操作符获取搜索词中某一个的结果" class="headerlink" title="3.  使用 OR 操作符获取搜索词中某一个的结果"></a><strong>3.  使用 OR 操作符获取搜索词中某一个的结果</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(javascript OR python) free course</span><br></pre></td></tr></table></figure><h3 id="4-操作符将排除包含搜索词的结果"><a href="#4-操作符将排除包含搜索词的结果" class="headerlink" title="4. - 操作符将排除包含搜索词的结果"></a><strong>4. - 操作符将排除包含搜索词的结果</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript -css</span><br></pre></td></tr></table></figure><h3 id="5-可以使用-通配符作为占位符，它将被任何单词或短语替换"><a href="#5-可以使用-通配符作为占位符，它将被任何单词或短语替换" class="headerlink" title="5. 可以使用 (*) 通配符作为占位符，它将被任何单词或短语替换"></a><strong>5. 可以使用 (*) 通配符作为占位符，它将被任何单词或短语替换</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;how to start * in 6 months&quot;</span><br></pre></td></tr></table></figure><h3 id="6-在一个单一的网站搜索"><a href="#6-在一个单一的网站搜索" class="headerlink" title="6. 在一个单一的网站搜索"></a><strong>6. 在一个单一的网站搜索</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:freecodecamp.org</span><br></pre></td></tr></table></figure><h3 id="7-查找特定的文件类型"><a href="#7-查找特定的文件类型" class="headerlink" title="7.  查找特定的文件类型"></a><strong>7.  查找特定的文件类型</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">filetype:pdf learn css</span><br></pre></td></tr></table></figure><h3 id="8-搜索一个数字范围"><a href="#8-搜索一个数字范围" class="headerlink" title="8. 搜索一个数字范围"></a><strong>8. 搜索一个数字范围</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ecmascript 2016..2018</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Use-Google-like-a-pro&quot;&gt;&lt;a href=&quot;#Use-Google-like-a-pro&quot; class=&quot;headerlink&quot; title=&quot;Use Google like a pro&quot;&gt;&lt;/a&gt;Use Google like a pro&lt;/</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/06/04/%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%88%9D%E7%AD%89%E7%BE%A4%E8%AE%BA/"/>
+    <id>http://example.com/2024/06/04/%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%88%9D%E7%AD%89%E7%BE%A4%E8%AE%BA/</id>
+    <published>2024-06-04T05:39:34.307Z</published>
+    <updated>2024-06-05T03:02:41.928Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="欧拉公式与初等群论"><a href="#欧拉公式与初等群论" class="headerlink" title="欧拉公式与初等群论"></a>欧拉公式与初等群论</h1><p>来源：<a href="https://www.bilibili.com/video/BV1fx41187tZ/">https://www.bilibili.com/video/BV1fx41187tZ/</a></p><h2 id="群论就是研究对称性本质的一个领域"><a href="#群论就是研究对称性本质的一个领域" class="headerlink" title="群论就是研究对称性本质的一个领域"></a>群论就是研究对称性本质的一个领域</h2><p>“群”是“对称群”的简称</p><p>加法群（一维）：平移</p><p>乘法群（一维）：缩放</p><p>复数加法群（二维）：平移+垂直方向平移</p><p>复数乘法群（二维）：缩放+旋转</p><h2 id="群就是某个数学对象上对称作用的集合"><a href="#群就是某个数学对象上对称作用的集合" class="headerlink" title="群就是某个数学对象上对称作用的集合"></a>群就是某个数学对象上对称作用的集合</h2><p>对于指数函数的性质</p><p>2^(x+y)&#x3D;2^x*2^y</p><p>把指数函数的输入看作加法群的滑动作用，输出看作乘法群的缩放+旋转</p><h2 id="欧拉公式"><a href="#欧拉公式" class="headerlink" title="欧拉公式"></a>欧拉公式</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;欧拉公式与初等群论&quot;&gt;&lt;a href=&quot;#欧拉公式与初等群论&quot; class=&quot;headerlink&quot; title=&quot;欧拉公式与初等群论&quot;&gt;&lt;/a&gt;欧拉公式与初等群论&lt;/h1&gt;&lt;p&gt;来源：&lt;a href=&quot;https://www.bilibili.com/video</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
