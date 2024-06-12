@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-11T16:48:51.352Z</updated>
+  <updated>2024-06-12T03:20:55.565Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>STFT</title>
+    <link href="http://example.com/2024/06/12/STFT/"/>
+    <id>http://example.com/2024/06/12/STFT/</id>
+    <published>2024-06-12T03:15:51.027Z</published>
+    <updated>2024-06-12T03:20:55.565Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="STFT介绍"><a href="#STFT介绍" class="headerlink" title="STFT介绍"></a>STFT介绍</h1><p>短时傅里叶变换（Short-Time Fourier Transform, STFT）是傅里叶变换的一种，它通过在时间轴上应用移动窗口来分析信号的频率内容随时间的变化。STFT 是时频分析的基本工具之一，特别适用于分析非平稳信号（即频率成分随时间变化的信号）。</p><h3 id="数学原理"><a href="#数学原理" class="headerlink" title="数学原理"></a>数学原理</h3><h4 id="连续时间信号的STFT"><a href="#连续时间信号的STFT" class="headerlink" title="连续时间信号的STFT"></a>连续时间信号的STFT</h4><p>设 $ x(t) $ 是一个连续时间信号，$ w(t) $ 是一个移动窗口函数（通常是一个短时窗，如汉宁窗或高斯窗）。STFT 的定义为：</p><p>$$ \text{STFT}<em>x(t, \omega) &#x3D; \int</em>{-\infty}^{\infty} x(\tau) w(\tau - t) e^{-j \omega \tau} , d\tau $$</p><p>其中：</p><ul><li>$ \text{STFT}_x(t, \omega)$是在时间 $ t $ 和频率 $ \omega $ 上的短时傅里叶变换。</li><li>$ x(\tau) $ 是原始信号。</li><li>$ w(\tau - t) $ 是移动窗口函数，中心位于 $ t $。</li><li>$ e^{-j \omega \tau} $ 是傅里叶变换的核函数。</li></ul><p>STFT 将信号在每个时间点 $ t $ 上截取一个窗函数 $ w(t) $，并对窗口内的信号进行傅里叶变换。通过移动窗函数的位置，可以得到不同时间点上的频谱，从而得到信号的时频表示。</p><h4 id="离散时间信号的STFT"><a href="#离散时间信号的STFT" class="headerlink" title="离散时间信号的STFT"></a>离散时间信号的STFT</h4><p>对于离散时间信号 $ x[n] $，其STFT定义为：</p><p>$$ \text{STFT}<em>x(m, \omega) &#x3D; \sum</em>{n&#x3D;-\infty}^{\infty} x[n] w[n - m] e^{-j \omega n} $$</p><p>其中：</p><ul><li>$ x[n] $ 是离散时间信号。</li><li>$ w[n - m] $ 是移动窗口函数，中心位于 $ m $。</li><li>$ e^{-j \omega n} $ 是傅里叶变换的核函数。</li></ul><p>通常，离散时间STFT的频率参数 $ \omega $ 被离散化为 $ \omega &#x3D; \frac{2\pi k}{N} $（其中 $ N $ 是FFT的长度），因此离散STFT可以表示为：</p><p>$$ \text{STFT}<em>x(m, k) &#x3D; \sum</em>{n&#x3D;-\infty}^{\infty} x[n] w[n - m] e^{-j \frac{2\pi k}{N} n} $$</p><h3 id="STFT的步骤"><a href="#STFT的步骤" class="headerlink" title="STFT的步骤"></a>STFT的步骤</h3><ol><li><p><strong>窗口化</strong>：</p><ul><li>使用一个窗函数（如汉宁窗、高斯窗等）截取信号的一部分。窗口函数通常是一个短时窗，长度较短，可以移动。</li></ul></li><li><p><strong>移动窗口</strong>：</p><ul><li>将窗口函数在信号上移动，每次移动一个步长（通常称为 hop size），截取信号的不同部分。</li></ul></li><li><p><strong>傅里叶变换</strong>：</p><ul><li>对每个窗口内的信号进行傅里叶变换，计算出窗口内信号的频谱。</li></ul></li><li><p><strong>组合结果</strong>：</p><ul><li>将每个时间窗口的频谱组合在一起，形成信号的时频表示。</li></ul></li></ol><h3 id="STFT-的特性"><a href="#STFT-的特性" class="headerlink" title="STFT 的特性"></a>STFT 的特性</h3><ul><li><p><strong>时间和频率分辨率的权衡</strong>：</p><ul><li>窗口的长度决定了时间和频率分辨率之间的权衡。较短的窗口提供较高的时间分辨率，但频率分辨率较低；较长的窗口提供较高的频率分辨率，但时间分辨率较低。</li></ul></li><li><p><strong>非平稳信号的分析</strong>：</p><ul><li>STFT 特别适用于分析非平稳信号，可以捕捉信号频率成分随时间的变化。</li></ul></li></ul><h3 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h3><p>以下是使用STFT进行时频分析的示例代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> scipy.signal <span class="keyword">import</span> stft</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成示例信号</span></span><br><span class="line">fs = <span class="number">1000</span>  <span class="comment"># 采样频率</span></span><br><span class="line">T = <span class="number">1</span>  <span class="comment"># 信号持续时间</span></span><br><span class="line">t = np.linspace(<span class="number">0</span>, T, fs * T, endpoint=<span class="literal">False</span>)  <span class="comment"># 时间向量</span></span><br><span class="line">signal = np.sin(<span class="number">2</span> * np.pi * <span class="number">50</span> * t) + <span class="number">0.5</span> * np.sin(<span class="number">2</span> * np.pi * <span class="number">120</span> * t)  <span class="comment"># 示例信号</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 计算STFT</span></span><br><span class="line">f, t, Zxx = stft(signal, fs, nperseg=<span class="number">256</span>, noverlap=<span class="number">128</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制STFT结果</span></span><br><span class="line">plt.figure(figsize=(<span class="number">10</span>, <span class="number">6</span>))</span><br><span class="line">plt.pcolormesh(t, f, np.<span class="built_in">abs</span>(Zxx), shading=<span class="string">&#x27;gouraud&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Frequency [Hz]&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Time [sec]&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;STFT Magnitude&#x27;</span>)</span><br><span class="line">plt.colorbar(label=<span class="string">&#x27;Magnitude&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>STFT 是一种通过在时间轴上应用移动窗口来分析信号频率内容随时间变化的方法。通过选择不同的窗口长度和步长，可以在时间和频率分辨率之间进行权衡，适用于分析非平稳信号。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;STFT介绍&quot;&gt;&lt;a href=&quot;#STFT介绍&quot; class=&quot;headerlink&quot; title=&quot;STFT介绍&quot;&gt;&lt;/a&gt;STFT介绍&lt;/h1&gt;&lt;p&gt;短时傅里叶变换（Short-Time Fourier Transform, STFT）是傅里叶变换的一种，它</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title></title>
