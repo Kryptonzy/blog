@@ -3,27 +3,92 @@
   <title>Hexo</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://kryptonzy.github.io/blog/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2024-06-27T11:32:54.784Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://kryptonzy.github.io/blog/"/>
+  <updated>2024-10-14T14:17:11.810Z</updated>
+  <id>https://kryptonzy.github.io/blog/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Kryptonzy</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>计组期末复习</title>
-    <link href="http://example.com/2024/06/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    <id>http://example.com/2024/06/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</id>
-    <published>2024-06-25T09:35:55.370Z</published>
-    <updated>2024-06-27T11:32:54.784Z</updated>
+    <title>个人网站</title>
+    <link href="https://kryptonzy.github.io/blog/2024/10/14/my%20first%20project/"/>
+    <id>https://kryptonzy.github.io/blog/2024/10/14/my%20first%20project/</id>
+    <published>2024-10-14T11:40:31.201Z</published>
+    <updated>2024-10-14T14:17:11.810Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="计组期末复习"><a href="#计组期末复习" class="headerlink" title="计组期末复习"></a>计组期末复习</h1><h2 id="《深入理解计算机系统》"><a href="#《深入理解计算机系统》" class="headerlink" title="《深入理解计算机系统》"></a>《深入理解计算机系统》</h2><h3 id="编译系统"><a href="#编译系统" class="headerlink" title="编译系统"></a>编译系统</h3><p>编译系统包括预处理器、编译器、汇编器、链接器四个程序。</p><h3 id="简单操作的例子"><a href="#简单操作的例子" class="headerlink" title="简单操作的例子"></a>简单操作的例子</h3><p>加载:从主存复制一个字节或者一个字到寄存器，以覆盖寄存器原来的内容。</p><p>存储:从寄存器复制一个字节或者一个字到主存的某个位置，以覆盖这个位置上原来的内容。</p><p>操作:把两个寄存器的内容复制到ALU，ALU对这两个字做算术运算，并将结果存放到一个寄存器中，以覆盖该寄存器中原来的内容。</p><p>跳转:从指令本身中抽取一个字，并将这个字复制到程序计数器(PC)中，以覆盖PC中原来的值。</p><div style="text-align: center"><img src="image/计算机组成原理/1719308673038.png" width="50%" height="50%" ></div><h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><p>进程是操作系统对一个正在运行的程序的一种抽象</p><h3 id="上下文"><a href="#上下文" class="headerlink" title="上下文"></a>上下文</h3><p>上下文就是操作系统保持跟踪进程运行所需的而所有状态信息。</p><h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><p>一个线程可以由多个成为线程的执行单元组成，每个线程都运行在进程的上下文中，并共享同样的代码和全局数据。</p><h3 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h3><p>虚拟内存是一个抽象概念，它为每个进程提供了一个假象，即每个进程都在独占地使用主存。每个进程看到的内存都是一致的，称为虚拟地址空间。</p><h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><p>文件就是字节序列，仅此而已。</p><h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><p>并发指的是一个同时具有多个活动的系统</p><h3 id="并行"><a href="#并行" class="headerlink" title="并行"></a>并行</h3><p>并行指的是用并发来使一个系统运行得更快</p><p>按照系统层次结构由高到低，有三个层次：线程级并发；指令级并行；单指令、多数据并行。</p><h3 id="超标量"><a href="#超标量" class="headerlink" title="超标量"></a>超标量</h3><p>如果处理器可以达到比一个周期一条指令更快的执行速率，就称之为超标量处理器。</p><h2 id="《杭电教材》"><a href="#《杭电教材》" class="headerlink" title="《杭电教材》"></a>《杭电教材》</h2><h3 id="存储系统"><a href="#存储系统" class="headerlink" title="存储系统"></a>存储系统</h3><h4 id="编址"><a href="#编址" class="headerlink" title="编址"></a>编址</h4><p>编址（Addressing）在计算机科学中是指为存储器中的每一个存储单元分配一个唯一的地址的过程。这个地址是一个数字标识符，CPU通过这个地址来定位和访问特定的存储单元。编址机制允许CPU知道数据或指令具体存储在哪里，从而能够读取或写入这些位置。</p><h4 id="主存储器"><a href="#主存储器" class="headerlink" title="主存储器"></a>主存储器</h4><p>主存由RAM和ROM组成。下面介绍RAM：</p><p>SRAM：每个存储单元有六个MOS管。</p><p>DRAM：每个存储单元有一个MOS管、一个电容。会“再生”、“刷新”。刷新分为：集中式刷新、分散式刷新、异步式刷新。</p><h5 id="主存与CPU的连接"><a href="#主存与CPU的连接" class="headerlink" title="主存与CPU的连接"></a>主存与CPU的连接</h5><p>存储容量有三种扩展方式：位扩展、字扩展、位字扩展。</p><h4 id="双端口存储器"><a href="#双端口存储器" class="headerlink" title="双端口存储器"></a>双端口存储器</h4><p>双端口存储器指同一个存储器具有两组相互独立的读写控制线路，允许两个独立的CPU或控制器同时异步地访问存储单元，是一种高速工作的存储器。</p><h4 id="多体交叉存储器"><a href="#多体交叉存储器" class="headerlink" title="多体交叉存储器"></a>多体交叉存储器</h4><p>多体交叉方式分为高位地址交叉方式（顺序编址）和低位地址交叉方式（交叉编址）。</p><h4 id="相联存储器"><a href="#相联存储器" class="headerlink" title="相联存储器"></a>相联存储器</h4><h4 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h4><p><strong>程序局部性原理</strong>：包括时间局部性、空间局部性。</p><p>Cache的材质是高速的SRAM</p><p><strong>Cache-主存系统：</strong> 小容量、高速度的Cache和由大容量、低速度的DRAM构成的主存储器组合起来。这样构成的系统。</p><p>Cache及其控制逻辑完全由硬件实现。</p><p>Cache的地址存放在一个相联存储器中，这个相联存储器的内容就是地址。当CPU提供字地址时，相联存储器按内容进行查找，如果地址匹配成功，则Cache有该数据的副本，称为<strong>Cache命中</strong>。反之则成为<strong>Cache不命中</strong>或<strong>Cache缺失</strong>。</p><p>Cache-主存系统的指标参数：命中率、平均访问时间、访问效率。</p><p>Cache的透明性：地址映射完全由硬件实现，软件人员丝毫感受不到Cache的存在。</p><p>主存地址与Cache的地址映射方式有三种：直接映射、全相联映射、组相联映射。</p><p>替换算法：随机替换算法、先进先出算法（FIFO）、最近最少使用算法（LRU）</p><p>写策略：写贯穿策略、写回策略</p><h3 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h3><h3 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h3><p>一个指令包含若干个机器周期（CPU周期），一个机器周期包含若干个时钟周期（节拍、T周期、CPU时钟周期）</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><p>自己写前后端代码（AI辅助）建立个人网站</p><h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>学习相关的前后端以及devops知识</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;任务&quot;&gt;&lt;a href=&quot;#任务&quot; class=&quot;headerlink&quot; title=&quot;任务&quot;&gt;&lt;/a&gt;任务&lt;/h2&gt;&lt;p&gt;自己写前后端代码（AI辅助）建立个人网站&lt;/p&gt;
+&lt;h2 id=&quot;目的&quot;&gt;&lt;a href=&quot;#目的&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>不同语言的NLP</title>
+    <link href="https://kryptonzy.github.io/blog/2024/09/28/NLP/"/>
+    <id>https://kryptonzy.github.io/blog/2024/09/28/NLP/</id>
+    <published>2024-09-28T07:02:57.410Z</published>
+    <updated>2024-09-28T07:04:09.519Z</updated>
+    
+    <content type="html"><![CDATA[<p>在自然语言处理（NLP）中，处理不同语言时，某些阶段会有所不同，而其他阶段则基本相同。以下是对这些相同和不同阶段的详细说明：</p><hr><p><strong>相同或类似的阶段：</strong></p><ol><li><p><strong>任务定义和问题建模：</strong></p><ul><li><strong>统一的NLP任务</strong>：无论语言如何，核心的NLP任务（如文本分类、情感分析、命名实体识别、机器翻译等）在定义和目标上是相似的。</li><li><strong>模型训练流程</strong>：数据预处理、模型训练、验证和测试的基本流程一致。</li></ul></li><li><p><strong>算法和模型架构：</strong></p><ul><li><strong>机器学习算法</strong>：如朴素贝叶斯、支持向量机、决策树等传统算法在不同语言的文本数据上都可应用。</li><li><strong>深度学习架构</strong>：神经网络模型（如CNN、RNN、Transformer）的基本架构和训练方法在各语言间通用。</li></ul></li><li><p><strong>评估方法和指标：</strong></p><ul><li><strong>评估指标</strong>：准确率、精确率、召回率、F1值、BLEU分数等评估指标适用于所有语言。</li><li><strong>交叉验证和测试方法</strong>：用于评估模型性能的技术在不同语言中一致。</li></ul></li><li><p><strong>高层次的语义理解：</strong></p><ul><li><strong>主题模型</strong>：如LDA主题模型，可用于不同语言的主题提取。</li><li><strong>语义相似度计算</strong>：基于词向量或句向量的相似度计算方法在不同语言中类似。</li></ul></li></ol><hr><p><strong>不同或需要适应的阶段：</strong></p><ol><li><p><strong>文本预处理：</strong></p><ul><li><strong>分词和标记化（Tokenization）</strong>：<ul><li><strong>中文、日文、韩文</strong>：没有明显的词与词之间的空格，需要使用分词算法。</li><li><strong>英语、法语、德语</strong>：以空格和标点符号作为天然的分隔符，但仍需考虑缩写、连字符等特殊情况。</li></ul></li><li><strong>词形归并和词干提取</strong>：<ul><li><strong>形态丰富的语言</strong>（如阿拉伯语、俄语）：词形变化多样，需要复杂的词形归并算法。</li><li><strong>形态简单的语言</strong>（如英语）：词干提取相对简单。</li></ul></li></ul></li><li><p><strong>语法和句法分析：</strong></p><ul><li><strong>语序差异</strong>：不同语言的主谓宾结构可能不同，如日语通常采用主宾谓结构，需要调整解析器。</li><li><strong>句法规则</strong>：每种语言都有特定的语法规则，解析器需要针对特定语言进行训练或规则制定。</li><li><strong>依存关系和短语结构</strong>：依存句法和成分句法在不同语言中的表现形式不同。</li></ul></li><li><p><strong>词汇和语义处理：</strong></p><ul><li><strong>多义词和同形异义词</strong>：不同语言的多义现象需要特定的消歧算法。</li><li><strong>习语和固定表达</strong>：文化特定的表达方式需要特殊处理。</li></ul></li><li><p><strong>语言资源和数据：</strong></p><ul><li><strong>训练数据的可用性</strong>：主流语言的数据资源丰富，而小语种可能缺乏足够的数据。</li><li><strong>词典和知识库</strong>：需要为每种语言构建或获取相应的词典、同义词库、反义词库等。</li></ul></li><li><p><strong>字符集和编码：</strong></p><ul><li><strong>不同的字符集</strong>：如拉丁字母、汉字、西里尔字母等，需要确保系统支持相应的编码（如UTF-8）。</li><li><strong>特殊字符处理</strong>：如重音符号、变音符号，需要在预处理时保留或正确转换。</li></ul></li><li><p><strong>语音和发音特性（如果涉及语音处理）：</strong></p><ul><li><strong>音素和音节结构</strong>：不同语言的音素集合和音节结构不同，影响语音识别和合成。</li><li><strong>语调和重音</strong>：在某些语言中，语调改变可能导致词义变化，需要特别关注。</li></ul></li><li><p><strong>文化和社会背景：</strong></p><ul><li><strong>命名实体</strong>：人名、地名、组织名等在不同文化中有不同的构成方式，需要特定的识别方法。</li><li><strong>时间和日期格式</strong>：日期、时间、数字的表示方式因语言和文化而异，需要在信息抽取时进行转换。</li></ul></li></ol><hr><p><strong>总结：</strong></p><ul><li><p><strong>不同的阶段主要集中在</strong>：</p><ul><li><strong>文本预处理</strong>：分词、词形归并、字符编码等，需要针对语言特性进行调整。</li><li><strong>语法和语义分析</strong>：语法规则、句法结构、文化特定的表达方式，需要特定的模型和规则。</li><li><strong>资源和数据</strong>：数据的可获得性、质量以及工具的支持程度因语言而异。</li></ul></li><li><p><strong>相同或类似的阶段包括</strong>：</p><ul><li><strong>任务定义和目标</strong>：NLP的核心任务在各语言间基本一致。</li><li><strong>算法和模型</strong>：机器学习和深度学习的基本原理和模型架构可跨语言应用。</li><li><strong>评估方法</strong>：模型性能的评估标准在不同语言的任务中通用。</li></ul></li></ul><hr><p><strong>应对语言差异的策略：</strong></p><ol><li><strong>多语言模型</strong>：使用跨语言的预训练模型，如XLM-R、mBERT，可以在多个语言间共享表示，减少对单一语言数据的依赖。</li><li><strong>数据增强和迁移学习</strong>：从高资源语言迁移知识到低资源语言，通过翻译、数据生成等方式增强数据集。</li><li><strong>语言特定的工具和资源</strong>：利用针对特定语言开发的分词器、解析器、词典和知识库，提高处理精度。</li><li><strong>社区和开源资源</strong>：参与多语言NLP社区，利用现有的开源工具和数据集，加速开发过程。</li></ol><hr><p>希望以上内容能帮助您理解在处理不同语言的自然语言处理任务时，哪些阶段需要针对语言特性进行调整，哪些阶段可以采用通用的方法。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在自然语言处理（NLP）中，处理不同语言时，某些阶段会有所不同，而其他阶段则基本相同。以下是对这些相同和不同阶段的详细说明：&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;相同或类似的阶段：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;任务定义和问题建模：&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java web项目技术栈介绍</title>
+    <link href="https://kryptonzy.github.io/blog/2024/09/02/JAVA%20WEB%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+    <id>https://kryptonzy.github.io/blog/2024/09/02/JAVA%20WEB%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88/</id>
+    <published>2024-09-02T08:31:44.294Z</published>
+    <updated>2024-09-02T08:32:31.891Z</updated>
+    
+    <content type="html"><![CDATA[<p>你提供的配置文件片段涉及 <strong>Spring</strong>、<strong>Spring MVC</strong>、<strong>Spring Boot</strong>、<strong>Thymeleaf</strong>、<strong>JPA（Java Persistence API）</strong>、<strong>MyBatis</strong> 以及 <strong>Hibernate</strong> 等多个技术栈。接下来，我会逐一解释这些技术的关系，并给出它们的首次出现时间和应用背景。</p><h3 id="1-Spring-Framework"><a href="#1-Spring-Framework" class="headerlink" title="1. Spring Framework"></a>1. <strong>Spring Framework</strong></h3><ul><li><strong>首次出现时间</strong>：2003年（Spring Framework 1.0）</li><li><strong>应用背景</strong>：Spring 框架诞生于 2003 年，旨在简化 Java EE 开发中的复杂性。它通过提供依赖注入（DI）、面向切面编程（AOP）等特性，减少了代码的耦合度和冗余配置。</li><li><strong>关系</strong>：Spring 是所有这些技术栈的基础框架，为其他模块（如 Spring MVC）和工具（如 Spring Boot）提供了核心容器和依赖注入功能。Spring 也提供了与各种数据访问技术（如 JPA、MyBatis）的集成。</li></ul><h3 id="2-Spring-MVC"><a href="#2-Spring-MVC" class="headerlink" title="2. Spring MVC"></a>2. <strong>Spring MVC</strong></h3><ul><li><strong>首次出现时间</strong>：2004年（Spring Framework 1.2）</li><li><strong>应用背景</strong>：Spring MVC 是 Spring Framework 的一个模块，用于构建基于 Web 的应用程序。它采用 MVC（模型-视图-控制器）设计模式，旨在替代传统的 Java EE Web 框架，如 Struts，提供更灵活、更轻量级的 Web 开发支持。</li><li><strong>关系</strong>：Spring MVC 是 Spring 框架的一部分，用于处理 HTTP 请求和响应，是一个专门用于 Web 层的模块。Spring MVC 可以与 Thymeleaf 模板引擎集成来生成视图。</li></ul><h3 id="3-Spring-Boot"><a href="#3-Spring-Boot" class="headerlink" title="3. Spring Boot"></a>3. <strong>Spring Boot</strong></h3><ul><li><strong>首次出现时间</strong>：2014年（Spring Boot 1.0）</li><li><strong>应用背景</strong>：Spring Boot 是 Spring 团队推出的一个框架，旨在简化 Spring 应用的开发。它通过自动配置和约定优于配置的原则，减少了样板代码和复杂的 XML 配置，使开发者可以快速构建和运行 Spring 应用程序。</li><li><strong>关系</strong>：Spring Boot 基于 Spring 框架，提供了自动配置的能力，使得 Spring MVC、JPA、MyBatis 等与 Spring 框架的集成变得更加简单。你在配置文件中使用的 <code>application.yml</code> 正是 Spring Boot 项目中的配置文件。</li></ul><h3 id="4-Thymeleaf"><a href="#4-Thymeleaf" class="headerlink" title="4. Thymeleaf"></a>4. <strong>Thymeleaf</strong></h3><ul><li><strong>首次出现时间</strong>：2011年（Thymeleaf 1.0）</li><li><strong>应用背景</strong>：Thymeleaf 是一种现代的 Java 模板引擎，旨在替代 JSP（JavaServer Pages）等传统视图技术。它支持 HTML 5 并允许模板在浏览器和服务器端都能正常渲染，使得前端和后端开发更为流畅。</li><li><strong>关系</strong>：Thymeleaf 可以与 Spring MVC 配合使用，用于生成 HTML 页面。在 Spring Boot 中，Thymeleaf 已经集成好了，你只需要在 <code>application.yml</code> 中进行简单配置即可使用。</li></ul><h3 id="5-JPA（Java-Persistence-API）"><a href="#5-JPA（Java-Persistence-API）" class="headerlink" title="5. JPA（Java Persistence API）"></a>5. <strong>JPA（Java Persistence API）</strong></h3><ul><li><strong>首次出现时间</strong>：2006年（JPA 1.0，作为 EJB 3.0 规范的一部分）</li><li><strong>应用背景</strong>：JPA 是 Java 平台的官方持久化标准，它提供了一种对象关系映射（ORM）的方法来管理 Java 应用中的数据持久化。JPA 是 Java EE 5 规范的一部分，目的是为 Java 应用程序提供一个标准化的数据访问层。</li><li><strong>关系</strong>：JPA 是一个规范，Hibernate 是最常用的 JPA 实现之一。Spring Data JPA 是 Spring 提供的一个模块，它使得 JPA 的使用更加简单，结合 Spring Boot 提供的自动配置，开发者只需要定义接口和简单的注解即可完成数据访问逻辑。</li></ul><h3 id="6-MyBatis"><a href="#6-MyBatis" class="headerlink" title="6. MyBatis"></a>6. <strong>MyBatis</strong></h3><ul><li><strong>首次出现时间</strong>：2002年（最初作为 iBATIS 发布，2010 年更名为 MyBatis）</li><li><strong>应用背景</strong>：MyBatis 是一个支持自定义 SQL、存储过程以及高级映射的持久层框架。与 JPA 不同，MyBatis 提供了更高的灵活性，允许开发者手动编写 SQL 语句。它非常适合需要高性能 SQL 操作和复杂查询的场景。</li><li><strong>关系</strong>：MyBatis 可以作为 Spring 应用程序中的数据持久化解决方案之一。Spring Boot 可以通过自动配置轻松集成 MyBatis，你只需要配置 <code>mapper-locations</code> 和 <code>type-aliases-package</code> 等属性即可。</li></ul><h3 id="7-Hibernate"><a href="#7-Hibernate" class="headerlink" title="7. Hibernate"></a>7. <strong>Hibernate</strong></h3><ul><li><strong>首次出现时间</strong>：2001年（Hibernate 1.0）</li><li><strong>应用背景</strong>：Hibernate 是一个流行的 Java 持久层框架，提供了对象关系映射（ORM）的实现。它简化了数据库访问的复杂性，支持多种数据库，并与 JPA 规范兼容。Hibernate 最初由 Gavin King 开发，旨在替代 EJB 2.0。</li><li><strong>关系</strong>：Hibernate 是 JPA 的一种实现，你在配置文件中提到的 <code>database-platform</code> 是 Hibernate 用来生成 SQL 语句的方言。Spring 和 Spring Boot 通过 Spring Data JPA 模块原生支持 Hibernate 作为 JPA 的实现。</li></ul><h3 id="8-它们之间的关系总结"><a href="#8-它们之间的关系总结" class="headerlink" title="8. 它们之间的关系总结"></a>8. <strong>它们之间的关系总结</strong></h3><ul><li><strong>Spring Framework</strong>：核心基础框架，提供依赖注入（DI）和面向切面编程（AOP）功能，是整个 Spring 生态系统的核心。</li><li><strong>Spring MVC</strong>：Spring 的一个子模块，专门用于构建 Web 应用程序，它使用了 Spring 的核心功能。</li><li><strong>Spring Boot</strong>：构建于 Spring 之上，简化了 Spring 应用程序的开发和配置过程。它集成了 Spring MVC、Thymeleaf、JPA、MyBatis 等，使得所有这些技术可以更轻松地结合在一起。</li><li><strong>Thymeleaf</strong>：一个模板引擎，与 Spring MVC 一起使用来生成 Web 页面。</li><li><strong>JPA 和 Hibernate</strong>：JPA 是 Java 的持久化 API 规范，Hibernate 是它的一个常用实现。Spring Boot 可以自动配置这些工具，并使它们更容易使用。</li><li><strong>MyBatis</strong>：一个轻量级的持久化框架，提供了与 Spring 的紧密集成。与 JPA/Hibernate 的自动映射不同，MyBatis 允许开发者使用自定义 SQL 语句来操作数据库。</li></ul><h3 id="9-首次出现时间总结"><a href="#9-首次出现时间总结" class="headerlink" title="9. 首次出现时间总结"></a>9. <strong>首次出现时间总结</strong></h3><ul><li><strong>Spring Framework</strong>：2003年</li><li><strong>Spring MVC</strong>：2004年（Spring Framework 1.2 中发布）</li><li><strong>Spring Boot</strong>：2014年</li><li><strong>Thymeleaf</strong>：2011年</li><li><strong>JPA</strong>：2006年</li><li><strong>MyBatis</strong>：2002年（最初作为 iBATIS 发布）</li><li><strong>Hibernate</strong>：2001年</li></ul><p>这些技术在应用开发中各司其职，通过 Spring Boot 的简化配置，它们可以更加轻松地结合在一起，使得现代 Java 应用开发更加高效和灵活。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;你提供的配置文件片段涉及 &lt;strong&gt;Spring&lt;/strong&gt;、&lt;strong&gt;Spring MVC&lt;/strong&gt;、&lt;strong&gt;Spring Boot&lt;/strong&gt;、&lt;strong&gt;Thymeleaf&lt;/strong&gt;、&lt;strong&gt;JPA（Java</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计组期末复习</title>
+    <link href="https://kryptonzy.github.io/blog/2024/06/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</id>
+    <published>2024-06-25T09:35:55.370Z</published>
+    <updated>2024-06-27T12:33:01.966Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="计组期末复习"><a href="#计组期末复习" class="headerlink" title="计组期末复习"></a>计组期末复习</h1><h2 id="《深入理解计算机系统》"><a href="#《深入理解计算机系统》" class="headerlink" title="《深入理解计算机系统》"></a>《深入理解计算机系统》</h2><h3 id="编译系统"><a href="#编译系统" class="headerlink" title="编译系统"></a>编译系统</h3><p>编译系统包括预处理器、编译器、汇编器、链接器四个程序。</p><h3 id="简单操作的例子"><a href="#简单操作的例子" class="headerlink" title="简单操作的例子"></a>简单操作的例子</h3><p>加载:从主存复制一个字节或者一个字到寄存器，以覆盖寄存器原来的内容。</p><p>存储:从寄存器复制一个字节或者一个字到主存的某个位置，以覆盖这个位置上原来的内容。</p><p>操作:把两个寄存器的内容复制到ALU，ALU对这两个字做算术运算，并将结果存放到一个寄存器中，以覆盖该寄存器中原来的内容。</p><p>跳转:从指令本身中抽取一个字，并将这个字复制到程序计数器(PC)中，以覆盖PC中原来的值。</p><div style="text-align: center"><img src="image/计算机组成原理/1719308673038.png" width="50%" height="50%" ></div><h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><p>进程是操作系统对一个正在运行的程序的一种抽象</p><h3 id="上下文"><a href="#上下文" class="headerlink" title="上下文"></a>上下文</h3><p>上下文就是操作系统保持跟踪进程运行所需的而所有状态信息。</p><h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><p>一个线程可以由多个成为线程的执行单元组成，每个线程都运行在进程的上下文中，并共享同样的代码和全局数据。</p><h3 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h3><p>虚拟内存是一个抽象概念，它为每个进程提供了一个假象，即每个进程都在独占地使用主存。每个进程看到的内存都是一致的，称为虚拟地址空间。</p><h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><p>文件就是字节序列，仅此而已。</p><h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><p>并发指的是一个同时具有多个活动的系统</p><h3 id="并行"><a href="#并行" class="headerlink" title="并行"></a>并行</h3><p>并行指的是用并发来使一个系统运行得更快</p><p>按照系统层次结构由高到低，有三个层次：线程级并发；指令级并行；单指令、多数据并行。</p><h3 id="超标量"><a href="#超标量" class="headerlink" title="超标量"></a>超标量</h3><p>如果处理器可以达到比一个周期一条指令更快的执行速率，就称之为超标量处理器。</p><h2 id="《杭电教材》"><a href="#《杭电教材》" class="headerlink" title="《杭电教材》"></a>《杭电教材》</h2><h3 id="存储系统"><a href="#存储系统" class="headerlink" title="存储系统"></a>存储系统</h3><h4 id="编址"><a href="#编址" class="headerlink" title="编址"></a>编址</h4><p>编址（Addressing）在计算机科学中是指为存储器中的每一个存储单元分配一个唯一的地址的过程。这个地址是一个数字标识符，CPU通过这个地址来定位和访问特定的存储单元。编址机制允许CPU知道数据或指令具体存储在哪里，从而能够读取或写入这些位置。</p><h4 id="主存储器"><a href="#主存储器" class="headerlink" title="主存储器"></a>主存储器</h4><p>主存由RAM和ROM组成。下面介绍RAM：</p><p>SRAM：每个存储单元有六个MOS管。</p><p>DRAM：每个存储单元有一个MOS管、一个电容。会“再生”、“刷新”。刷新分为：集中式刷新、分散式刷新、异步式刷新。</p><h5 id="主存与CPU的连接"><a href="#主存与CPU的连接" class="headerlink" title="主存与CPU的连接"></a>主存与CPU的连接</h5><p>存储容量有三种扩展方式：位扩展、字扩展、位字扩展。</p><h4 id="双端口存储器"><a href="#双端口存储器" class="headerlink" title="双端口存储器"></a>双端口存储器</h4><p>双端口存储器指同一个存储器具有两组相互独立的读写控制线路，允许两个独立的CPU或控制器同时异步地访问存储单元，是一种高速工作的存储器。</p><h4 id="多体交叉存储器"><a href="#多体交叉存储器" class="headerlink" title="多体交叉存储器"></a>多体交叉存储器</h4><p>多体交叉方式分为高位地址交叉方式（顺序编址）和低位地址交叉方式（交叉编址）。</p><h4 id="相联存储器"><a href="#相联存储器" class="headerlink" title="相联存储器"></a>相联存储器</h4><h4 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h4><p><strong>程序局部性原理</strong>：包括时间局部性、空间局部性。</p><p>Cache的材质是高速的SRAM</p><p><strong>Cache-主存系统：</strong> 小容量、高速度的Cache和由大容量、低速度的DRAM构成的主存储器组合起来。这样构成的系统。</p><p>Cache及其控制逻辑完全由硬件实现。</p><p>Cache的地址存放在一个相联存储器中，这个相联存储器的内容就是地址。当CPU提供字地址时，相联存储器按内容进行查找，如果地址匹配成功，则Cache有该数据的副本，称为<strong>Cache命中</strong>。反之则成为<strong>Cache不命中</strong>或<strong>Cache缺失</strong>。</p><p>Cache-主存系统的指标参数：命中率、平均访问时间、访问效率。</p><p>Cache的透明性：地址映射完全由硬件实现，软件人员丝毫感受不到Cache的存在。</p><p>主存地址与Cache的地址映射方式有三种：直接映射、全相联映射、组相联映射。</p><p>替换算法：随机替换算法、先进先出算法（FIFO）、最近最少使用算法（LRU）</p><p>写策略：写贯穿策略、写回策略</p><h3 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h3><h3 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h3><p>一个指令包含若干个机器周期（CPU周期），一个机器周期包含若干个时钟周期（节拍、T周期、CPU时钟周期）</p><h3 id="为什么选择多周期CPU而不选择单周期CPU"><a href="#为什么选择多周期CPU而不选择单周期CPU" class="headerlink" title="为什么选择多周期CPU而不选择单周期CPU"></a>为什么选择多周期CPU而不选择单周期CPU</h3><p>虽然单周期CPU在每个时钟周期内完成一条指令，使得CPI（每条指令的时钟周期数）等于1，从而看似简化了设计和实现，但在实践中，多周期CPU通常更为常见。这是因为多周期CPU有许多优势，使其在性能和效率上更具吸引力。下面是多周期CPU相对于单周期CPU的一些主要优势和原因：</p><h4 id="1-时钟周期时间更短"><a href="#1-时钟周期时间更短" class="headerlink" title="1. 时钟周期时间更短"></a>1. 时钟周期时间更短</h4><ul><li><strong>单周期CPU</strong>：必须保证所有指令在一个时钟周期内完成。这意味着时钟周期必须足够长，以容纳执行时间最长的指令。</li><li><strong>多周期CPU</strong>：每条指令分为多个步骤，每个步骤在一个时钟周期内完成。这使得时钟周期可以缩短，因为每个步骤的执行时间通常比最长指令的执行时间短得多。</li></ul><h4 id="2-硬件利用效率更高"><a href="#2-硬件利用效率更高" class="headerlink" title="2. 硬件利用效率更高"></a>2. 硬件利用效率更高</h4><ul><li><strong>单周期CPU</strong>：所有指令在一个时钟周期内完成，意味着所有硬件资源（如ALU、寄存器）在每个时钟周期内都必须准备好处理最复杂的指令。这导致了硬件资源在处理简单指令时的低效利用。</li><li><strong>多周期CPU</strong>：不同指令的不同步骤在不同的时钟周期内完成，使得硬件资源可以更均匀地分布在多个时钟周期内利用，提高了整体硬件利用率。</li></ul><h4 id="3-指令集扩展和复杂性管理"><a href="#3-指令集扩展和复杂性管理" class="headerlink" title="3. 指令集扩展和复杂性管理"></a>3. 指令集扩展和复杂性管理</h4><ul><li><strong>单周期CPU</strong>：由于所有指令在一个时钟周期内完成，复杂指令的引入会显著增加时钟周期时间，限制了指令集的扩展。</li><li><strong>多周期CPU</strong>：允许复杂指令分解为多个步骤执行，每个步骤在一个时钟周期内完成。这使得设计者可以更灵活地引入复杂指令而不显著影响时钟周期时间。</li></ul><h4 id="4-电能消耗"><a href="#4-电能消耗" class="headerlink" title="4. 电能消耗"></a>4. 电能消耗</h4><ul><li><strong>单周期CPU</strong>：较长的时钟周期时间和较高的硬件要求会增加功耗，特别是在处理简单指令时效率低下。</li><li><strong>多周期CPU</strong>：由于更短的时钟周期时间和更高的硬件利用率，多周期CPU通常在电能消耗方面更为高效。</li></ul><h4 id="5-性能优化"><a href="#5-性能优化" class="headerlink" title="5. 性能优化"></a>5. 性能优化</h4><ul><li><strong>单周期CPU</strong>：时钟周期时间被最长指令所限制，导致整体性能优化困难。</li><li><strong>多周期CPU</strong>：通过优化每个步骤的执行时间和流水线设计，可以更有效地提高性能。例如，可以通过增加流水线深度来并行处理更多指令。</li></ul><h4 id="6-设计复杂性和灵活性"><a href="#6-设计复杂性和灵活性" class="headerlink" title="6. 设计复杂性和灵活性"></a>6. 设计复杂性和灵活性</h4><ul><li><strong>单周期CPU</strong>：设计较为简单，但在面对复杂指令集时变得困难。</li><li><strong>多周期CPU</strong>：设计较为复杂，但提供了更大的灵活性来处理复杂指令集和优化性能。</li></ul><h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p>假设有一条复杂的指令需要5个子操作才能完成：</p><ul><li>在单周期CPU中，时钟周期时间必须足够长以容纳所有5个子操作的执行时间，这会拖慢其他所有指令的执行。</li><li>在多周期CPU中，可以将这条指令分解为5个步骤，每个步骤在一个时钟周期内完成，允许时钟周期时间缩短并提高整体效率。</li></ul><h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>尽管单周期CPU设计相对简单，并能在一个时钟周期内完成一条指令，但在实际应用中，多周期CPU通过更短的时钟周期时间、更高的硬件利用率、更灵活的指令集扩展和更有效的性能优化，提供了更高的效率和性能。因此，多周期CPU在现代计算机设计中更为常见。</p>]]></content>
     
     
       
@@ -38,8 +103,8 @@
   
   <entry>
     <title>多模态</title>
-    <link href="http://example.com/2024/06/20/%E5%A4%9A%E6%A8%A1%E6%80%81/"/>
-    <id>http://example.com/2024/06/20/%E5%A4%9A%E6%A8%A1%E6%80%81/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/20/%E5%A4%9A%E6%A8%A1%E6%80%81/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/20/%E5%A4%9A%E6%A8%A1%E6%80%81/</id>
     <published>2024-06-20T09:28:02.857Z</published>
     <updated>2024-06-20T09:32:52.450Z</updated>
     
@@ -59,8 +124,8 @@
   
   <entry>
     <title>java初步</title>
-    <link href="http://example.com/2024/06/16/JAVA%E5%88%9D%E6%AD%A5/"/>
-    <id>http://example.com/2024/06/16/JAVA%E5%88%9D%E6%AD%A5/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/16/JAVA%E5%88%9D%E6%AD%A5/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/16/JAVA%E5%88%9D%E6%AD%A5/</id>
     <published>2024-06-16T11:30:33.370Z</published>
     <updated>2024-06-17T02:17:39.186Z</updated>
     
@@ -80,8 +145,8 @@
   
   <entry>
     <title>富文本格式</title>
-    <link href="http://example.com/2024/06/14/%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F/"/>
-    <id>http://example.com/2024/06/14/%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/14/%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/14/%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F/</id>
     <published>2024-06-14T08:16:54.887Z</published>
     <updated>2024-06-14T11:27:08.167Z</updated>
     
@@ -100,8 +165,8 @@
   
   <entry>
     <title>深度学习总结</title>
-    <link href="http://example.com/2024/06/14/%E7%82%BC%E4%B8%B9/"/>
-    <id>http://example.com/2024/06/14/%E7%82%BC%E4%B8%B9/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/14/%E7%82%BC%E4%B8%B9/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/14/%E7%82%BC%E4%B8%B9/</id>
     <published>2024-06-14T07:36:47.210Z</published>
     <updated>2024-06-18T17:05:44.869Z</updated>
     
@@ -121,8 +186,8 @@
   
   <entry>
     <title>STFT</title>
-    <link href="http://example.com/2024/06/12/STFT/"/>
-    <id>http://example.com/2024/06/12/STFT/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/12/STFT/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/12/STFT/</id>
     <published>2024-06-12T03:15:51.027Z</published>
     <updated>2024-06-18T05:52:19.922Z</updated>
     
@@ -141,8 +206,8 @@
   
   <entry>
     <title>瞬时频率</title>
-    <link href="http://example.com/2024/06/12/%E7%9E%AC%E6%97%B6%E9%A2%91%E7%8E%87/"/>
-    <id>http://example.com/2024/06/12/%E7%9E%AC%E6%97%B6%E9%A2%91%E7%8E%87/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/12/%E7%9E%AC%E6%97%B6%E9%A2%91%E7%8E%87/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/12/%E7%9E%AC%E6%97%B6%E9%A2%91%E7%8E%87/</id>
     <published>2024-06-11T16:37:38.887Z</published>
     <updated>2024-06-12T05:59:41.108Z</updated>
     
@@ -162,8 +227,8 @@
   
   <entry>
     <title>世界是连续的还是离散的</title>
-    <link href="http://example.com/2024/06/11/%E7%A6%BB%E6%95%A3%E8%BF%98%E6%98%AF%E8%BF%9E%E7%BB%AD/"/>
-    <id>http://example.com/2024/06/11/%E7%A6%BB%E6%95%A3%E8%BF%98%E6%98%AF%E8%BF%9E%E7%BB%AD/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/11/%E7%A6%BB%E6%95%A3%E8%BF%98%E6%98%AF%E8%BF%9E%E7%BB%AD/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/11/%E7%A6%BB%E6%95%A3%E8%BF%98%E6%98%AF%E8%BF%9E%E7%BB%AD/</id>
     <published>2024-06-11T10:31:53.169Z</published>
     <updated>2024-06-12T06:00:13.786Z</updated>
     
@@ -182,8 +247,8 @@
   
   <entry>
     <title>谱熵</title>
-    <link href="http://example.com/2024/06/11/%E8%B0%B1%E7%86%B5/"/>
-    <id>http://example.com/2024/06/11/%E8%B0%B1%E7%86%B5/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/11/%E8%B0%B1%E7%86%B5/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/11/%E8%B0%B1%E7%86%B5/</id>
     <published>2024-06-11T09:23:23.869Z</published>
     <updated>2024-06-18T08:07:47.688Z</updated>
     
@@ -202,8 +267,8 @@
   
   <entry>
     <title>Use Google like a pro</title>
-    <link href="http://example.com/2024/06/05/google%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
-    <id>http://example.com/2024/06/05/google%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/05/google%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/05/google%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</id>
     <published>2024-06-05T02:56:58.592Z</published>
     <updated>2024-06-11T16:48:29.009Z</updated>
     
@@ -222,8 +287,8 @@
   
   <entry>
     <title>欧拉公式与初等群论</title>
-    <link href="http://example.com/2024/06/04/%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%88%9D%E7%AD%89%E7%BE%A4%E8%AE%BA/"/>
-    <id>http://example.com/2024/06/04/%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%88%9D%E7%AD%89%E7%BE%A4%E8%AE%BA/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/06/04/%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%88%9D%E7%AD%89%E7%BE%A4%E8%AE%BA/"/>
+    <id>https://kryptonzy.github.io/blog/2024/06/04/%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%88%9D%E7%AD%89%E7%BE%A4%E8%AE%BA/</id>
     <published>2024-06-04T05:39:34.307Z</published>
     <updated>2024-06-12T06:00:18.540Z</updated>
     
@@ -242,8 +307,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2024/04/22/hello-world/"/>
-    <id>http://example.com/2024/04/22/hello-world/</id>
+    <link href="https://kryptonzy.github.io/blog/2024/04/22/hello-world/"/>
+    <id>https://kryptonzy.github.io/blog/2024/04/22/hello-world/</id>
     <published>2024-04-22T06:54:21.035Z</published>
     <updated>2024-04-22T06:54:21.036Z</updated>
     
